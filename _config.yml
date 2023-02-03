@@ -1,8 +1,36 @@
-remote_theme: pages-themes/tactile@v0.2.0
-plugins:
-- jekyll-remote-theme
+---
 
-title: musaic.art
-description: The Sound of Patterns.
+port: 4000
+host: 0.0.0.0
+safe: false
 
-show_downloads: false
+
+### site serving configuration ###
+exclude: [CNAME, README.md, .gitignore]
+permalink: /:title ## disables post output
+timezone: null
+lsi: false
+markdown: kramdown
+
+
+### content configuration ###
+title:       "musaic.art"
+description: "The Sound of Patterns."
+keywords:    "musaic.art, musaic, music, mosaic, pattern, geometry, architecture"
+source_link: "https://github.com/musaic-art/"
+google_analytics_key:
+
+### template colors, used site-wide via css ###
+colors:
+  black:     '#111111'
+  white:     '#f8f8f8'
+  gray:      '#707070'
+  blue:      '#49a7e9'
+  green:     '#9bcf2f'
+  purple:    '#c869bf'
+  orange:    '#fab125'
+  turquoise: '#0fbfcf'
+
+kramdown:
+  auto_ids:  false
+
